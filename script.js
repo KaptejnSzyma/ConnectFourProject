@@ -95,6 +95,7 @@ $('.board button').on('click', function(){
     $('h1').text(currentName+", You have won! Refresh the page to play again.")
     $('h3').fadeOut('fast');
     $('h2').fadeOut('fast');
+    $('button').attr('disabled', true);
   }
 
   currentPlayer = currentPlayer * -1;
